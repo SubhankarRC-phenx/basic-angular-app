@@ -6,4 +6,9 @@
   </div>
 </div>
 
-<button mat-raised-button>adsad</button>
+<a [routerLink]="['/home']" class="me-3">Home</a>
+<a [routerLink]="['/about']" class="me-3">About</a>
+
+<button mat-raised-button (click)="nextPage()" color="primary">Home</button>
+
+<router-outlet></router-outlet>
