@@ -1,34 +1,45 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
+<div>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary" style="padding: 0px">
+    <div
+      class="container-fluid"
+      style="background-color: rgb(238, 238, 221); padding: 7px"
     >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto">
-        <a
-          class="nav-link active"
-          aria-current="page"
-          [routerLink]="['/ecommerce/ecommerce-dashboard/ecommerce-home']"
-          >Home</a
-        >
-        <a
-          class="nav-link"
-          [routerLink]="['/ecommerce/ecommerce-dashboard/ecommerce-about']"
-          >About</a
-        >
-        <a class="nav-link" href="#">Gallery</a>
-        <a class="nav-link" href="#">Registration</a>
-        <a class="nav-link" href="#">Log In</a>
+      <a class="navbar-brand" href="#">
+        <img
+          src="./assets/imgaes/logo3.png"
+          alt=""
+          style="width: 60px; height: 60px"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['/ecommerce-dashboard/ecommerce-home']"
+            >Home</a
+          >
+          <a
+            class="nav-link"
+            [routerLink]="['/ecommerce-dashboard/ecommerce-about']"
+            >About</a
+          >
+          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" href="#">Registration</a>
+          <a class="nav-link" href="#">Log In</a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
+  </nav>
+</div>

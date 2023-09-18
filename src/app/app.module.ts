@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatButtonModule} from '@angular/material/button';
-import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +15,6 @@ import { HomeModule } from './home/home.module';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    HomeModule
 
 
   ],
