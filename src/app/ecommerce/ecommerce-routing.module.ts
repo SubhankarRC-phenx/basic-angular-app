@@ -8,13 +8,21 @@ const routes: Routes = [
   {
     path : '',
     pathMatch : 'full',
-    redirectTo: 'ecommerce-dashboard'
+    redirectTo: 'ecommerce-home' //ecommerce-dashboard
   },
+  // ecommerce-dashboard
   {
-    path : 'ecommerce-dashboard', component : EcommerceComponent,
+    path : '', component : EcommerceComponent,
     children:[
+      // {
+      //   path: 'ecommerce-home', component : EcommerceHomeComponent
+      // },
       {
-        path: 'ecommerce-home', component : EcommerceHomeComponent
+        path : 'ecommerce-home',
+        loadChildren : () =>
+        import('./ecommerce-home/ecommerce-home.module').then(
+          (m) => m.EcommerceHomeModule
+        ),
       },
       {
         path: 'ecommerce-about', component : EcommerceAboutComponent
