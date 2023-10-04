@@ -7,6 +7,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
+import {MatChipsModule} from '@angular/material/chips';
 
 
 @NgModule({
@@ -21,7 +22,9 @@ import { RegistrationFormComponent } from './registration-form/registration-form
 
     MatButtonModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+    MatChipsModule
+
 
   ]
 })

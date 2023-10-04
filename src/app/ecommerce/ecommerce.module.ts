@@ -8,6 +8,8 @@ import { EcommerceHeaderComponent } from './ecommerce-header/ecommerce-header.co
 import { EcommerceAboutComponent } from './ecommerce-about/ecommerce-about.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatIconModule} from '@angular/material/icon';
+import { CardBoxComponent } from './card-box/card-box.component';
+import { MatChipsModule } from '@angular/material/chips';
 
 
 @NgModule({
@@ -15,13 +17,16 @@ import {MatIconModule} from '@angular/material/icon';
     EcommerceComponent,
     EcommerceHeaderComponent,
     EcommerceAboutComponent,
+    CardBoxComponent,
   ],
   imports: [
     CommonModule,
     EcommerceRoutingModule,
     MatButtonModule,
     MatDialogModule,
-    MatIconModule
+    MatIconModule,
+
+    MatChipsModule
   ]
 })
 export class EcommerceModule { }
