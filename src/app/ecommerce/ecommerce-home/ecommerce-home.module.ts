@@ -8,6 +8,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatIconModule } from '@angular/material/icon';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import {MatChipsModule} from '@angular/material/chips';
+import { MatFormField } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -23,7 +24,7 @@ import {MatChipsModule} from '@angular/material/chips';
     MatButtonModule,
     MatDialogModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
 
 
   ]
