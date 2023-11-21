@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
@@ -7,7 +7,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
   templateUrl: './ecommerce-about.component.html',
   styleUrls: ['./ecommerce-about.component.scss']
 })
-export class EcommerceAboutComponent {
+export class EcommerceAboutComponent implements OnInit{
 
 
   newSalesVoucher = new FormGroup({
@@ -19,6 +19,9 @@ export class EcommerceAboutComponent {
 
     private _snackBar: MatSnackBar,
   ){
+
+  }
+  ngOnInit(): void {
 
   }
 
