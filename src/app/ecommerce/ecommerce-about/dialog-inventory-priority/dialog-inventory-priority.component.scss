@@ -1,0 +1,135 @@
+::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+  width: 34vw;
+}
+
+::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+  border-radius: 10px;
+}
+
+::ng-deep .panelclass_create_priority .mdc-text-field--filled:not(.mdc-text-field--disabled){
+  background-color: transparent;
+}
+
+.inventory_state_title{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.14em;
+  font-family: poppinsregular !important;
+  margin-left: 20px;
+}
+
+
+.state_dialog_body{
+  padding: 25px 30px;
+  min-height: 30vh;
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.active{
+  // background-color: #D9D9D9;
+  // border: 2px solid #000000;
+}
+
+.color_picker_btn{
+  padding: 25px 15px;
+  // margin-left:5px ;
+  border-radius: 5px;
+  color: black;
+}
+
+.priority_create_dialog_btn{
+  border-radius: 6px;
+  background: #6A467A;
+  box-shadow: -1px -1px 2px 0px rgba(47, 60, 61, 0.50) inset, 1px 1px 2px 0px rgba(147, 192, 195, 0.30) inset;
+  color: #ffffff;
+  font-family: poppinsregular !important;
+  font-size: 15px;
+  font-style: normal;
+  padding: 20px 25px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.8px;
+}
+
+@media only screen and (max-width: 600px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 100vw;
+  }
+  ::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+      border-radius: 0px;
+  }
+
+  .project_name_field, .project_note_field{
+      width: 100%;
+  }
+  .state_dialog_body{
+    padding: 25px 10px;
+    max-height: 83vh;
+    // overflow: auto;
+}
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 650px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 100vw;
+  }
+  ::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+      border-radius: 0px;
+  }
+  .project_name_field, .project_note_field{
+      width: 100%;
+  }
+
+  .state_dialog_body{
+      max-height: 80vh;
+      overflow: auto;
+  }
+}
+@media only screen and (min-width: 651px) and (max-width: 768px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 95vw;
+  }
+  ::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+      border-radius: 10px;
+  }
+  .project_name_field, .project_note_field{
+      width: 100%;
+  }
+
+}
+@media only screen and (min-width: 769px) and (max-width: 991px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 75vw;
+  }
+  ::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+      border-radius: 10px;
+  }
+
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 60vw;
+  }
+  ::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+      border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1201px) and (max-width: 1450px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 50vw;
+  }
+  ::ng-deep .panelclass_create_priority .mdc-dialog__surface{
+      border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1451px) and (max-width: 1520px){
+  ::ng-deep .panelclass_create_priority .mat-mdc-dialog-container{
+      width: 42vw;
+  }
+}

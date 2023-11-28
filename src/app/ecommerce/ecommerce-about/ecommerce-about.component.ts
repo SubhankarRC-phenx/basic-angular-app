@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { DialogInventoryPriorityComponent } from './dialog-inventory-priority/dialog-inventory-priority.component';
 
 @Component({
   selector: 'app-ecommerce-about',
@@ -17,6 +19,7 @@ export class EcommerceAboutComponent implements OnInit{
 
   constructor(
 
+    public dialog: MatDialog,
     private _snackBar: MatSnackBar,
   ){
 
@@ -35,6 +38,23 @@ export class EcommerceAboutComponent implements OnInit{
     }
     console.log(this.newSalesVoucher.value);
 
+  }
+
+
+  openDialogCreatePriority(): void{
+    const dialogRef = this.dialog.open(DialogInventoryPriorityComponent,{
+      maxWidth:'100vw',
+      panelClass:'panelclass_create_priority',
+      disableClose:true,
+      data:{
+        title:'Create Priority',
+        btn_title:'Create'
+      }
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
   }
 
 }

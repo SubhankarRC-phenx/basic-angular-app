@@ -9,6 +9,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { RegistrationFormComponent } from './registration-form/registration-form.component';
 import {MatChipsModule} from '@angular/material/chips';
 import { MatFormField } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 @NgModule({
@@ -21,10 +25,16 @@ import { MatFormField } from '@angular/material/form-field';
     CommonModule,
     EcommerceHomeRoutingModule,
 
+
     MatButtonModule,
     MatDialogModule,
     MatIconModule,
-    MatChipsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatSnackBarModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatChipsModule
 
 
   ]

@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { DialogInventoryPriorityComponent } from './ecommerce-about/dialog-inventory-priority/dialog-inventory-priority.component';
 
 
 @NgModule({
@@ -23,6 +24,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
     EcommerceHeaderComponent,
     EcommerceAboutComponent,
     CardBoxComponent,
+
+    DialogInventoryPriorityComponent
   ],
   imports: [
     CommonModule,
