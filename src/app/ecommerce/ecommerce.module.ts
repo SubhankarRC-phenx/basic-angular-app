@@ -16,6 +16,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { DialogInventoryPriorityComponent } from './ecommerce-about/dialog-inventory-priority/dialog-inventory-priority.component';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -38,6 +39,7 @@ import { DialogInventoryPriorityComponent } from './ecommerce-about/dialog-inven
     MatSnackBarModule,
     FormsModule,
     ReactiveFormsModule,
+    MatTabsModule,
     MatChipsModule
   ]
 })

@@ -1,0 +1,41 @@
+::ng-deep .mat-mdc-tab-header-pagination-controls-enabled .mat-mdc-tab-header-pagination{
+  background-color: #BFD8DA;
+}
+
+
+::ng-deep .access_control_tab .mat-mdc-tab-label-container{
+  background: #BFD8DA !important;
+  height: 50px;
+}
+
+::ng-deep .access_control_tab .mat-mdc-tab-label .mat-mdc-tab-label-content{
+  color: black !important;
+  font-size: 20px !important;
+}
+
+::ng-deep .access_control_tab .mdc-tab__text-label{
+  color: black !important;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+::ng-deep .access_control_tab .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline, .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline{
+  border-color:#94adae !important;
+}
+
+::ng-deep .access_control_tab .mdc-tab-indicator--active{
+  background-color: #94adae !important;
+  border-top: 2px solid #334D4E;
+  border-left: 2px solid #334D4E;
+  border-right: 2px solid #334D4E;
+}
+
+::ng-deep .access_control_tab .mat-mdc-tab.mdc-tab--active .mdc-tab__text-label{
+
+  color:#fff !important;
+  font-weight: 700;
+}
+
+::ng-deep .access_control_tab .mat-mdc-tab-group.mat-primary .mat-ink-bar, .mat-mdc-tab-nav-bar.mat-primary .mat-ink-bar{
+  background-color: black !important;
+}

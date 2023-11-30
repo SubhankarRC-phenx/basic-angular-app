@@ -1,4 +1,4 @@
-<div class="d-flex justify-content-start">
+<div class="d-flex justify-content-start mt-5 mb-5">
   <div>
     <button mat-raised-button color="primary" (click)="openDialogCreatePriority()">Color Table Template Dialog</button>
   </div>
@@ -16,6 +16,7 @@
     [header_text]="'Modified'" [header_style]="{ 'color': '#5D4D7C','font-size':'18px' }" [amount]="200"
     [amount_style]="{ 'letter-spacing': '5px', color:'#5D4D7C' }"></app-card-box>
 </div> -->
+<div class="mt-5 mb-5">
 
 <h2>Mat Select Field Validations</h2>
 <div class="col-lg-4">
@@ -60,4 +61,18 @@
       Submit
     </button>
   </form>
+</div>
+</div>
+
+<div class="access_control_tab">
+  <mat-tab-group
+  animationDuration="0ms"
+  mat-stretch-tabs="false"
+  mat-align-tabs="start"
+  (selectedTabChange)="setTabIndex($event.index)"
+  [selectedIndex]="this.selected_tab_index">
+    <mat-tab label="User Group"> Content 1 </mat-tab>
+    <mat-tab label="Asset Permission"> Content 2 </mat-tab>
+    <mat-tab label="Kit Permission"> Content 3 </mat-tab>
+  </mat-tab-group>
 </div>
