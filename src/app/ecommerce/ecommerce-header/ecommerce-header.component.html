@@ -11,6 +11,8 @@
           style="width: 60px; height: 60px"
         />
       </a>
+
+
       <div class="ms-2 me-2" *ngIf="this.is_showable">
         <mat-form-field style="width: 300px">
           <mat-label>Search here</mat-label>
@@ -53,6 +55,8 @@
           </button>
         </mat-form-field>
       </div>
+
+
       <button
         class="navbar-toggler"
         type="button"
@@ -81,7 +85,7 @@
             style="font-size: 16px"
             >About</a
           >
-          <a class="nav-link" href="#" style="font-size: 16px">Gallery</a>
+          <a class="nav-link"  [routerLink]="['/ecommerce-gallery']" style="font-size: 16px">Gallery</a>
           <a class="nav-link" href="#" style="font-size: 16px">Registration</a>
           <a class="nav-link" href="#" style="font-size: 16px">Log In</a>
         </div>

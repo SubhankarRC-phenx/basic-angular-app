@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EcommerceComponent } from './ecommerce.component';
 import { EcommerceHomeComponent } from './ecommerce-home/ecommerce-home.component';
 import { EcommerceAboutComponent } from './ecommerce-about/ecommerce-about.component';
+import { EcommerceGalleryComponent } from './ecommerce-gallery/ecommerce-gallery.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,9 @@ const routes: Routes = [
       },
       {
         path: 'ecommerce-about', component : EcommerceAboutComponent
+      },
+      {
+        path: 'ecommerce-gallery', component : EcommerceGalleryComponent
       }
     ]
   }

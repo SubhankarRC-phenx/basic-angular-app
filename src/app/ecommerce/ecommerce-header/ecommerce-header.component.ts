@@ -24,6 +24,8 @@ export class EcommerceHeaderComponent implements OnInit{
         console.log(event.url)
         if(event.url.includes('ecommerce-about')){
           this.is_showable = false
+        }else if(event.url.includes('ecommerce-gallery')){
+          this.is_showable = false
         }
         else{
           this.is_showable = true

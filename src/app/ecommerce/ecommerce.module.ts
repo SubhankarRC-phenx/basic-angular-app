@@ -17,6 +17,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { DialogInventoryPriorityComponent } from './ecommerce-about/dialog-inventory-priority/dialog-inventory-priority.component';
 import {MatTabsModule} from '@angular/material/tabs';
+import { EcommerceGalleryComponent } from './ecommerce-gallery/ecommerce-gallery.component';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import {MatTabsModule} from '@angular/material/tabs';
     EcommerceAboutComponent,
     CardBoxComponent,
 
-    DialogInventoryPriorityComponent
+    DialogInventoryPriorityComponent,
+    EcommerceGalleryComponent
   ],
   imports: [
     CommonModule,

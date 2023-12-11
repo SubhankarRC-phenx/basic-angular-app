@@ -47,6 +47,18 @@ export class EcommerceAboutComponent implements OnInit{
   }
 
 
+  public model = { name: "geek1", age: 24 }
+
+  change_name_age(data:any) {
+
+      /* Update the current model with
+          the value sent by the child
+          component. */
+      this.model = data;
+  }
+
+
+
   // Start For mat-Tab Selected tabs
   setTabIndex(tab_index: number): void {
 
