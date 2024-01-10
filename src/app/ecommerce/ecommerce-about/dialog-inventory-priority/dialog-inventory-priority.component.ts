@@ -219,11 +219,11 @@ export class DialogInventoryPriorityComponent implements OnInit{
 
   }
 
-  setBackgroundColorGroupClone(index: number):void{
+  // setBackgroundColorGroupClone(index: number):void{
 
-    $('.table_color_div').children('table').children('tr').children('td').removeClass('active')
-    $('#clone_' + index).addClass('active')
-  }
+  //   $('.table_color_div').children('table').children('tr').children('td').removeClass('active')
+  //   $('#clone_' + index).addClass('active')
+  // }
 
   onCreatePriority(){
     console.log(this.priority.value);
