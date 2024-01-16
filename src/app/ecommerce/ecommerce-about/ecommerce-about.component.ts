@@ -14,7 +14,7 @@ import { Subscription } from 'rxjs';
 export class EcommerceAboutComponent implements OnInit{
 
 
-
+  tab_index: number = 0;
   selected_tab_index: number = 0;
   active_route_subscriber = new Subscription();
 
@@ -35,8 +35,10 @@ export class EcommerceAboutComponent implements OnInit{
     this.active_route_subscriber = this.active_route.queryParams.subscribe(
       (params) => {
         console.log(params);
-        if (params['tab_index'])
+        if (params['tab_index']){
           this.selected_tab_index = params['tab_index'];
+          this.tab_index = params['tab_index'];
+        }
       }
     );
     // End For mat-Tab Selected tabs
