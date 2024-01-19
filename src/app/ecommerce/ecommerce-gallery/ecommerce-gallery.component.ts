@@ -17,18 +17,17 @@ export class EcommerceGalleryComponent implements OnInit{
   constructor(){}
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 
 
 
-  send_name_age()
-  {
+  // send_name_age()
+  // {
 
-  /* we will wrap the parameters
-     to be sent inside the curly brackets.*/
+  // /* we will wrap the parameters
+  //    to be sent inside the curly brackets.*/
 
-    // this.data.emit({name:this.name, age:this.age});
+  //   // this.data.emit({name:this.name, age:this.age});
 
-  }
+  // }
 }
