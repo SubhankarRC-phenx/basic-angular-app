@@ -18,6 +18,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { DialogInventoryPriorityComponent } from './ecommerce-about/dialog-inventory-priority/dialog-inventory-priority.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { EcommerceGalleryComponent } from './ecommerce-gallery/ecommerce-gallery.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { EcommerceGalleryComponent } from './ecommerce-gallery/ecommerce-gallery
     FormsModule,
     ReactiveFormsModule,
     MatTabsModule,
-    MatChipsModule
+    MatChipsModule,
+    HttpClientModule
   ]
 })
 export class EcommerceModule { }

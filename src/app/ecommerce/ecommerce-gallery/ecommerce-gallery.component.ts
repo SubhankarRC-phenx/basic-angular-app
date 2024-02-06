@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import {AssetDataService} from './../../services/asset-data.service'
 
 @Component({
   selector: 'app-ecommerce-gallery',
@@ -14,10 +15,19 @@ export class EcommerceGalleryComponent implements OnInit{
 
   @Output() data = new EventEmitter<{name:string, age:number}>();
 
-  constructor(){}
+  constructor(
+// public dialog: MatDialog,
+    // private assetData: AssetDataService,
+  ){
+
+  }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // this.assetData.assetType().subscribe((data) =>{
+    //   console.warn("data",data);
+    //   this.assetData=data
+
+    // });
   }
 
 

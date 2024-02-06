@@ -24,6 +24,5 @@ export class CardBoxComponent implements OnInit{
 
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
   }
 }

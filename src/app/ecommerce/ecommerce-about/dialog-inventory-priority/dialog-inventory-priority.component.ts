@@ -229,4 +229,12 @@ export class DialogInventoryPriorityComponent implements OnInit{
     console.log(this.priority.value);
   }
 
+  minimizeDialog(): void{
+     this.dialogRef.updateSize('300px', '200px').updatePosition({bottom:'0%', right:'' });
+  }
+
+  maximizeDialog(): void {
+    this.dialogRef.updateSize('', '').updatePosition({bottom:'',right:''});
+  }
+
 }
