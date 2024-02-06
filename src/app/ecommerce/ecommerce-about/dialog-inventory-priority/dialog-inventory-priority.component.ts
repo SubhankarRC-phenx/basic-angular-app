@@ -229,8 +229,9 @@ export class DialogInventoryPriorityComponent implements OnInit{
     console.log(this.priority.value);
   }
 
+   visible:boolean = false
   minimizeDialog(): void{
-     this.dialogRef.updateSize('300px', '200px').updatePosition({bottom:'0%', right:'' });
+     this.dialogRef.updateSize('250px', '50px').updatePosition({bottom:'0%', right:'310px' });
   }
 
   maximizeDialog(): void {
